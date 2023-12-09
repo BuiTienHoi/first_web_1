@@ -1,0 +1,22 @@
+{%extends 'base.html'%}
+{%block title%}Mini{%endblock%}
+{%block name_2%}class="button"{%endblock%}
+{%block content%}
+<div class="form_mini">
+    <form method="POST">
+        <br>
+        <h2>First name</h2>
+        <input type="text" name="Name" value="{{request.form['Name']}}">
+        <h2>Second name</h2>
+        <input type="text" name="Surename" value="{{request.form['Surename']}}">
+        <h2>Sex</h2>
+        <p><input type="radio" name="Gender" value="man">Man</p>
+        <p><input type="radio" name="Gender" value="woman">Woman</p>
+        <br>
+        <input type="submit" value="submit">
+        <br>First name:{{var_1}}
+        <br>Second name: {{var_2}} 
+        <br>Sex : {{var_3}}
+    </form>
+</div>
+{%endblock%}

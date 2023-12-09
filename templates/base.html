@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{%block title%}{%endblock%}</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='stype.css')}}">
+</head>
+<body>
+    <div class="header">
+        <h1>Hello Word</h1>
+    </div>
+    <div class="topnav">
+        <a href="http://127.0.0.1:5000" {%block name_1%}{%endblock%}>Home</a>
+        <a href="http://127.0.0.1:5000/mini" {%block name_2%}{%endblock%}>Mini</a>
+        <a href="http://127.0.0.1:5000/lives" {%block name_3%}{%endblock%}>Lives</a>
+        <a href="http://127.0.0.1:5000/tourism" {%block name_4%}{%endblock%}>Tourism</a>
+        <a href="http://127.0.0.1:5000/infor" {%block name_5%}{%endblock%} style="float: right;">Infor</a>
+    </div>
+    {%block content%}
+    {%endblock%}
+    <div class="footer">
+        <h1>Release Date 03/12/2023</h1>
+    </div>
+</body>
+</html>
